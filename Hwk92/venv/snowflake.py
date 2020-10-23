@@ -38,7 +38,7 @@ if __name__ == "__main__":
     hideturtle()
     ht()
 
-    speed(0)
+    speed(50)
 
     # Pull the pen up – no drawing when moving.
     penup()
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     pendown()
 
     for i in range(3):
-        snowflake(size, 2)
+        snowflake(size, 4)
         right(120)
 
     # To control the closing windows of the turtle
