@@ -26,11 +26,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/venv" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/venv" />
+      <recent name="$PROJECT_DIR$/venv/include" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.snowflake">
+  <component name="RunManager" selected="Python.fracture">
     <configuration name="fracture" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Hwk92" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -44,6 +48,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/fracture.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fracture_bk05" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Hwk92" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/fracture_bk05.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tree_bk01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="tryit_goldcopy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Hwk92" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,28 +131,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/tree_bk01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tryit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Hwk92" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/tryit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/tryit_goldcopy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.snowflake" />
         <item itemvalue="Python.fracture" />
-        <item itemvalue="Python.tryit" />
+        <item itemvalue="Python.tryit_goldcopy" />
+        <item itemvalue="Python.fracture_bk05" />
+        <item itemvalue="Python.snowflake" />
         <item itemvalue="Python.throwaway" />
-        <item itemvalue="Python.tree_bk01" />
       </list>
     </recent_temporary>
   </component>
@@ -160,46 +164,54 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1554" height="245" key="GridCell.Tab.0.bottom" timestamp="1603473716917">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom" timestamp="1603478015550">
+      <screen x="0" y="23" width="1920" height="1009" />
     </state>
     <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1001@0.23.1920.1001" timestamp="1603430589986" />
     <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1002@0.23.1920.1002" timestamp="1603422848393" />
     <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1003@0.23.1920.1003" timestamp="1603350530792" />
     <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1004@0.23.1920.1004" timestamp="1603420967058" />
     <state width="1554" height="303" key="GridCell.Tab.0.bottom/0.23.1920.1005@0.23.1920.1005" timestamp="1603416903678" />
-    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1603473716917" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1603475717630" />
     <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1007@0.23.1920.1007" timestamp="1603470937778" />
-    <state width="1554" height="245" key="GridCell.Tab.0.center" timestamp="1603473716917">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1009@0.23.1920.1009" timestamp="1603478015550" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1010@0.23.1920.1010" timestamp="1603477653577" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center" timestamp="1603478015549">
+      <screen x="0" y="23" width="1920" height="1009" />
     </state>
     <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1001@0.23.1920.1001" timestamp="1603430589985" />
     <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1002@0.23.1920.1002" timestamp="1603422848393" />
     <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1003@0.23.1920.1003" timestamp="1603350530792" />
     <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1004@0.23.1920.1004" timestamp="1603420967057" />
     <state width="1554" height="303" key="GridCell.Tab.0.center/0.23.1920.1005@0.23.1920.1005" timestamp="1603416903678" />
-    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1603473716917" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1603475717629" />
     <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1007@0.23.1920.1007" timestamp="1603470937777" />
-    <state width="1554" height="245" key="GridCell.Tab.0.left" timestamp="1603473716917">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1009@0.23.1920.1009" timestamp="1603478015549" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1010@0.23.1920.1010" timestamp="1603477653576" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left" timestamp="1603478015549">
+      <screen x="0" y="23" width="1920" height="1009" />
     </state>
     <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1001@0.23.1920.1001" timestamp="1603430589985" />
     <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1002@0.23.1920.1002" timestamp="1603422848392" />
     <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1003@0.23.1920.1003" timestamp="1603350530791" />
     <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1004@0.23.1920.1004" timestamp="1603420967057" />
     <state width="1554" height="303" key="GridCell.Tab.0.left/0.23.1920.1005@0.23.1920.1005" timestamp="1603416903677" />
-    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1603473716917" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1603475717629" />
     <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1007@0.23.1920.1007" timestamp="1603470937777" />
-    <state width="1554" height="245" key="GridCell.Tab.0.right" timestamp="1603473716917">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1009@0.23.1920.1009" timestamp="1603478015549" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1010@0.23.1920.1010" timestamp="1603477653576" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right" timestamp="1603478015550">
+      <screen x="0" y="23" width="1920" height="1009" />
     </state>
     <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1001@0.23.1920.1001" timestamp="1603430589985" />
     <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1002@0.23.1920.1002" timestamp="1603422848393" />
     <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1003@0.23.1920.1003" timestamp="1603350530792" />
     <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1004@0.23.1920.1004" timestamp="1603420967058" />
     <state width="1554" height="303" key="GridCell.Tab.0.right/0.23.1920.1005@0.23.1920.1005" timestamp="1603416903678" />
-    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1603473716917" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1603475717630" />
     <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1007@0.23.1920.1007" timestamp="1603470937777" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1009@0.23.1920.1009" timestamp="1603478015550" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1010@0.23.1920.1010" timestamp="1603477653576" />
     <state width="1554" height="303" key="GridCell.Tab.1.bottom" timestamp="1603417275884">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>

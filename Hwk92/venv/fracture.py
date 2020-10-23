@@ -14,6 +14,19 @@ CYAN = (0, 255, 255)
 
 RUNNING, PAUSE = 0, 1
 
+# set values to initialize the animation
+done = False
+state = RUNNING
+
+# The button can be styled in a manner similar to CSS.
+BUTTON_STYLE = {
+    "hover_color": BLUE,
+    "clicked_color": GREEN,
+    "clicked_font_color": BLACK,
+    "hover_font_color": ORANGE,
+    "hover_sound": None,
+}
+
 pygame.init()  # prepare the pygame module for use
 
 # Create a new surface and window.
@@ -63,80 +76,85 @@ def draw_tree(order, theta, sz, posn, heading, color=(0, 0, 0), depth=0):
         draw_tree(order - 1, theta, newsz, newpos, heading + theta, color, depth + 1)
 
 
-def gameloop():
-    theta = 0
-    while not done:
-
-        # Handle evente from keyboard, mouse, etc.
-        # Handle evente from keyboard, mouse, etc.
-        ev = pygame.event.poll()
-        if ev.type == pygame.QUIT:
-            break;
-
-        quit_btn.check_event(ev)
-        pause_btn.check_event(ev)
-
-        if state == RUNNING:
-            '''Draw the tree'''
-            # Updates - change the angle
-            theta += 0.01
-
-            # Draw everything
-            main_surface.fill((255, 255, 0))
-            draw_tree(9, theta, surface_size * 0.9, (surface_size // 2, surface_size - 50), -math.pi / 2)
-
-        elif state == PAUSE:
-            """Draw the pause screen"""
-            # put text to screen
-            pygame.font.init()
-            bigfont = pygame.font.SysFont('Comic Sans MS', 90)
-            textsurface = bigfont.render('Paused', False, (0, 0, 0))
-
-            # center the text on the screen
-            main_surface.blit(textsurface, ((surface_size // 2) - textsurface.get_width() // 2, surface_size // 2))
-
-            littlefont = pygame.font.SysFont('Comic Sans MS', 25)
-            textsurface = littlefont.render('Press Quit to Quit, Press Play/Pause to Continue.', False, (0, 0, 0))
-
-            # center the text on the screen
-            main_surface.blit(
-                textsurface,
-                (
-                (surface_size // 2) - textsurface.get_width() // 2, (surface_size // 2) + textsurface.get_height() * 4))
-
-        quit_btn.update(main_surface)  # add the quit button to the surface
-        pause_btn.update(main_surface)  # add the pause button to the surface
-        pygame.display.flip()           # show the surface
-        my_clock.tick(120)
-        continue
-
-# The button can be styled in a manner similar to CSS.
-BUTTON_STYLE = {
-    "hover_color": BLUE,
-    "clicked_color": GREEN,
-    "clicked_font_color": BLACK,
-    "hover_font_color": ORANGE,
-    "hover_sound": None,
-}
-
-
-done = False
-
 def end():
     global done
     done = True
 
-state = RUNNING
 
 def pause():
     global state
-    #toggle RUNNING nad PAUSE
-    #This merely switches the state
+    # toggle RUNNING nad PAUSE
+    # This merely switches the state
     state = RUNNING if state == PAUSE else PAUSE
 
 
-quit_btn = Button((0, 0, 200, 50), RED, end, text='Quit', **BUTTON_STYLE)
-pause_btn = Button((200, 0, 200, 50), RED, pause, text='Play/Pause', **BUTTON_STYLE)
+def main():
+    pygame.init()  # prepare the pygame module for use
 
-gameloop()
-pygame.quit()
+    # Create a new surface and window.
+    surface_size = 1024
+    main_surface = pygame.display.set_mode((surface_size, surface_size))
+    my_clock = pygame.time.Clock()
+
+    # set up the buttons
+    quit_btn = Button((0, 0, 200, 50), RED, end, text='Quit', **BUTTON_STYLE)
+    pause_btn = Button((200, 0, 200, 50), RED, pause, text='Play/Pause', **BUTTON_STYLE)
+
+    while True:
+        theta = 0
+        while not done:
+
+            # Handle evente from keyboard, mouse, etc.
+            # Handle evente from keyboard, mouse, etc.
+            ev = pygame.event.poll()
+            if ev.type == pygame.QUIT:
+                #break;
+                pygame.quit()
+                quit()
+
+            quit_btn.check_event(ev)
+            pause_btn.check_event(ev)
+
+            if state == RUNNING:
+                '''Draw the tree'''
+                # Updates - change the angle
+                theta += 0.01
+
+                # Draw everything
+                main_surface.fill((255, 255, 0))
+                draw_tree(9, theta, surface_size * 0.9, (surface_size // 2, surface_size - 50), -math.pi / 2)
+
+            elif state == PAUSE:
+                """Draw the pause screen"""
+                # put text to screen
+                pygame.font.init()
+                bigfont = pygame.font.SysFont('Comic Sans MS', 90)
+                textsurface = bigfont.render('Paused', False, (0, 0, 0))
+
+                # center the text on the screen
+                main_surface.blit(textsurface, ((surface_size // 2) - textsurface.get_width() // 2, surface_size // 2))
+
+                littlefont = pygame.font.SysFont('Comic Sans MS', 25)
+                textsurface = littlefont.render('Press Quit to Quit, Press Play/Pause to Continue.', False, (0, 0, 0))
+
+                # center the text on the screen
+                main_surface.blit(
+                    textsurface,
+                    (
+                        (surface_size // 2) - textsurface.get_width() // 2,
+                        (surface_size // 2) + textsurface.get_height() * 4))
+
+            quit_btn.update(main_surface)  # add the quit button to the surface
+            pause_btn.update(main_surface)  # add the pause button to the surface
+            pygame.display.flip()  # show the surface
+            my_clock.tick(120)
+            continue
+
+        pygame.quit()
+        quit()
+
+if __name__ == '__main__':
+    main()
+
+
+
